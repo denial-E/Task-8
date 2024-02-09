@@ -3,27 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Event Update Page</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Survey Form</h1>
-        <form action="#">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" required>
-
-            <label for="feedback">Feedback:</label>
-            <textarea id="feedback" name="feedback" rows="4" required></textarea>
-
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+        <h1>Update Event</h1>
+        <form action="#" method="post">
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" name="event-name" required><br />
+            
+            <label for="event-date">Event Date:</label>
+            <input type="text" id="event-date" name="event-date" placeholder="YYYY-MM-DD" required><br />
+            
+            <label for="event-description">Event Description:</label>
+            <textarea id="event-description" name="event-description" rows="5" required></textarea><br />
+            
+            <input type="submit" value="submit"> 
+            <input type="Cancel" value="Cancel">
+            </form>
+        </div>
 </body>
 </html>
